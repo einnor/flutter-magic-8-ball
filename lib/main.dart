@@ -9,6 +9,7 @@ void main() {
           backgroundColor: Colors.blue.shade900,
         ),
         body: App(),
+        backgroundColor: Colors.blue,
       ),
     ),
   );
@@ -22,6 +23,16 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            child: FlatButton(
+              child: Image.asset('images/ball1.png'),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
